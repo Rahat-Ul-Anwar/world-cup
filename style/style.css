@@ -56,10 +56,10 @@ font-size:14px;
 } 
 
 .banner-btn{
-    background-color: red;
+    background-color: yellow;
     padding: 15px 22px;
     border-radius: 15px;
-    color: white;
+    color: black;
 }
 
  /* ********************match schedul section ****************************** */
@@ -80,6 +80,14 @@ font-size:14px;
   
     padding: 20px;
     border-radius: 10px;
+ }
+ #colorful{
+   
+      background-color: yellow;
+      padding: 15px 22px;
+      border-radius: 15px;
+      color: white;
+  
  }
 
   .btn-group .same-color{
@@ -204,6 +212,11 @@ font-size:14px;
  /* ************************responsive for mobileview************* 
  ******************************************************************************* */
  @media screen and (max-width: 576px){
+
+   .container{
+      width: 90%;
+      margin: 10px;
+   }
     .banner-details{
           
          grid-template-columns: repeat(1,1fr);
@@ -239,7 +252,7 @@ font-size:14px;
       background-color:white;
       padding:20px;
       border-radius: 10px;
-      border: 2px solid red;
+      
 
    }
 
@@ -268,3 +281,72 @@ font-size:14px;
 }
 
 
+/* second page */
+
+ 
+   .matches{
+    
+      grid-template-columns: repeat(1,1fr);
+      grid-gap:10px;
+   }
+   .flag-image{
+      display: flex;
+       
+      justify-content:flex-start;
+      padding: 20px;
+
+  }
+
+  .match-details {
+   text-align: left;
+}
+
+.match-details p{
+   font-size: 12px;
+} 
+
+
+
+ /* ************************responsive for tablet************* 
+ ******************************************************************************* */
+ @media screen and (min-width:577px) and (max-width:768px){
+
+   .container{
+      width: 90%;
+   }
+    
+   .banner-details{
+      display: flex;
+   }
+
+
+   .sub-container{
+      display: grid;
+      grid-template-columns: repeat(1,auto);
+      grid-column-gap: 15px;
+   
+  }
+  .btn-group {
+     
+      
+   display: flex;
+  
+    
+  
+   background-color:white;
+   padding:20px;
+   border-radius: 10px;
+   
+
+}
+   .blogs{
+      
+      grid-template-columns: repeat(2, 1fr);
+       
+  
+     
+    }
+
+   
+ }
+ }
